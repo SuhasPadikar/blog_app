@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+  <div id="wrapper">
+  <div id="content">
+    <div id="header">
+      <div id="logo">
+        <h1>BLOG APP</h1>
+        <h4>My 1st Rails Project</h4>
+      </div>
+      <div id="links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+       </ul>
+   </div>
+ </div>
+    <div id="mainimg">
+      <h3>Blogs</h3>
+      <h4>More about Ruby on Rails!!!</h4>
+     </div>
+     <div id="contentarea">
+     <div id="leftbar">
+     <%= yield %>
+      <div id="rightbar">
+        <h2>latest updates</h2>
+         <p><span class="orangetext">10/02/2023</span><br />
+          Ruby on rails 1st article uploaded <br />
+          <br />
+          <span class="orangetext">12/02/2023</span><br />
+          About ruby in 2nd article <br />
+          <br />
+          <span class="orangetext">14/02/2023</span><br />
+           MVC in Ruby on Rails! </p>
+       </div>
+       </div>
+        <div id="bottom">
+        <div id="email"><a href="mailto:info@blogapp.com">info@blogapp.com</a></div>
+        <div id="validtext">
+        <p>Valid <a href="http://validator.w3.org/check?uri=referer">XHTML</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a></p>
+       </div>
+      </div>
+     </div>
+   </div>
+    </body>
+</html>
